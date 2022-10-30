@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace DigitalDiary
 {
-    internal class Event
+    internal class Event : IDiaryEntry
     {
 
         //public string EventID { get; set; }
-        public string EventName { get; set; }
+        public string Name { get; set; }
         public DateTime Date { get; set; }
 
         public Event(string eventName, DateTime date)
         {
-            EventName = eventName;
+            Name = "Event: " + eventName;
             Date = date; 
         }
         public Event(string eventName, DateTime date, string note, string withWhom)
@@ -26,7 +26,7 @@ namespace DigitalDiary
 
         public void EditEventName(string newName)
         {
-            EventName = newName;
+            Name = newName;
         }
 
         public void Cancel()

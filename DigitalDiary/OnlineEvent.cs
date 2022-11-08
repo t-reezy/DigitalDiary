@@ -9,9 +9,11 @@ namespace DigitalDiary
     internal class OnlineEvent : IDiaryEntry
     {
         public string Name { get; set; }
-        public OnlineEvent(string name)
+        public DateTime DateAndTime { get; set; }
+        public OnlineEvent(string name, DateTime dateAndTime)
         {
             Name = name;
+            DateAndTime = dateAndTime;
         }
     }
 }

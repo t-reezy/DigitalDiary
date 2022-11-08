@@ -9,10 +9,12 @@ namespace DigitalDiary
     internal class Task : IDiaryEntry
     {
         public string Name { get; set; }
+        public DateTime DateAndTime { get; set; }
 
-        public Task(string name)
+        public Task(string name, DateTime dateAndTime)
         {
-            Name = name;
+            Name = "Task: " + name;
+            DateAndTime = dateAndTime;
         }
     }
 }

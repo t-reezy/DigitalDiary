@@ -10,10 +10,12 @@ namespace DigitalDiary
     {
         
         public string Name { get; set; }
+        public DateTime DateAndTime { get; set; }
 
-        public Anniversary(string name)
+        public Anniversary(string name, DateTime dateAndTime)
         {
             Name = "Anniversary of "  + name;
+            DateAndTime = dateAndTime; 
         }
     }
 }

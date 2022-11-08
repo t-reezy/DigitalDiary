@@ -11,33 +11,13 @@ namespace DigitalDiary
 
         //public string EventID { get; set; }
         public string Name { get; set; }
+        public DateTime DateAndTime { get; set; }
         public DateTime Date { get; set; }
 
-        public Event(string eventName, DateTime date)
+        public Event(string eventName, DateTime dateAndTime)
         {
             Name = "Event: " + eventName;
-            Date = date; 
+            DateAndTime = dateAndTime;
         }
-        public Event(string eventName, DateTime date, string note, string withWhom)
-        {
-
-        }
-
-
-        public void EditEventName(string newName)
-        {
-            Name = newName;
-        }
-
-        public void Cancel()
-        {
-
-        }
-
-        public void Remove()
-        {
-
-        }
-
     }
 }

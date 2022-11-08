@@ -9,10 +9,12 @@ namespace DigitalDiary
     internal class Birthday : IDiaryEntry
     {
         public string Name { get; set; }
+        public DateTime DateAndTime { get; set; }
 
-        public Birthday(string name)
+        public Birthday(string name, DateTime dateAndTime)
         {
-            Name = name + " has birthday";
+            Name = "Birthday of" + name;
+            DateAndTime = dateAndTime;
         }
     }
 }

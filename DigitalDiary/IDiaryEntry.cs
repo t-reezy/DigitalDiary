@@ -9,6 +9,7 @@ namespace DigitalDiary
     internal interface IDiaryEntry
     {
         string Name { get; set; }
+        DateTime DateAndTime { get; set; }
 
     }
 }

@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace DigitalDiary
 {
-    internal class OnlineEvent : IDiaryEntry
+    public class OnlineEvent : DiaryEntry
     {
-        public string Name { get; set; }
-        public DateTime DateAndTime { get; set; }
-        public OnlineEvent(string name, DateTime dateAndTime)
+        public string UrlString;
+        public OnlineEvent() { }
+        public OnlineEvent(string name, DateTime dateAndTime, string url)
         {
             Name = name;
             DateAndTime = dateAndTime;
+            UrlString = url; 
         }
     }
 }

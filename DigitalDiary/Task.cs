@@ -6,15 +6,24 @@ using System.Threading.Tasks;
 
 namespace DigitalDiary
 {
-    internal class Task : IDiaryEntry
+    public class Task : DiaryEntry
     {
-        public string Name { get; set; }
-        public DateTime DateAndTime { get; set; }
-
+        public bool IsDone = false;
+        public Task() { }
         public Task(string name, DateTime dateAndTime)
         {
-            Name = "Task: " + name;
+            Name = name;
             DateAndTime = dateAndTime;
+        }
+
+        public override string PrintDetails()
+        {
+            return base.PrintDetails();
+        }
+
+        public void MarkAsDone()
+        {
+            IsDone = true;
         }
     }
 }

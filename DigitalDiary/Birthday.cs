@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace DigitalDiary
 {
-    internal class Birthday : IDiaryEntry
+    public class Birthday : DiaryEntry
     {
-        public string Name { get; set; }
-        public DateTime DateAndTime { get; set; }
-
+        public Birthday() { }
         public Birthday(string name, DateTime dateAndTime)
         {
-            Name = "Birthday of" + name;
+            Name = name;
             DateAndTime = dateAndTime;
         }
+
     }
 }

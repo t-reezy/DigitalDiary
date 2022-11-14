@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace DigitalDiary
 {
-    internal interface IDiaryEntry
+    internal class DiarySettings
     {
-        string Name { get; set; }
-        DateTime DateAndTime { get; set; }
-
     }
 }

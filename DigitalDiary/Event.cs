@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace DigitalDiary
 {
-    internal class Event : IDiaryEntry
+    public class Event : DiaryEntry
     {
+        public string Place { get; set; }
 
-        //public string EventID { get; set; }
-        public string Name { get; set; }
-        public DateTime DateAndTime { get; set; }
-        public DateTime Date { get; set; }
-
-        public Event(string eventName, DateTime dateAndTime)
+        public Event() { }
+        public Event(string eventName, DateTime dateAndTime, string place )
         {
-            Name = "Event: " + eventName;
+            Name = eventName;
             DateAndTime = dateAndTime;
+            Place = place;
         }
+
+        
     }
 }

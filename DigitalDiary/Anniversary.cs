@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace DigitalDiary
 {
-    internal class Anniversary : IDiaryEntry
+    public class Anniversary : DiaryEntry
     {
-        
-        public string Name { get; set; }
-        public DateTime DateAndTime { get; set; }
+        public Anniversary() { }
 
         public Anniversary(string name, DateTime dateAndTime)
         {
-            Name = "Anniversary of "  + name;
+            Name = name;
             DateAndTime = dateAndTime; 
         }
     }

@@ -43,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Anniversary.cs" />
     <Compile Include="Birthday.cs" />
     <Compile Include="DiaryEntry.cs" />
-    <Compile Include="DiarySettings.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="OnlineEvent.cs" />
     <Compile Include="Program.cs" />
